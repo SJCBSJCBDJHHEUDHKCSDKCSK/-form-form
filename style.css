@@ -1,0 +1,96 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;justify-content: center;align-items: center;
+    ; background-color:#0D6EFD ;
+    padding: 0 10px;height:100vh;width: 100%;
+}
+.wrapper{
+    display: flex;min-height:70% ;flex-direction: column;width:80% ;
+    justify-content: space-between;align-items: center;
+    padding: 10px;width: 70%;background-color: aliceblue;
+    border: none;border-radius: 5px;position: relative;
+
+}
+.wrapper .header{
+    color: #0D6EFD;font-size: large;font-weight: 700;
+}
+form{
+    display: flex;flex-direction: column
+    ; justify-content: space-between;align-items: center;
+    padding: 4px;width: 90%;height: 90%;
+
+}
+form .main-field{
+    width: 100%;height: 25%;
+    display: flex;flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+form .main-field .field{
+    width: 45%;height: 100%;
+    margin-left: 10px;position: relative;margin-top: 10px;
+
+}
+form .main-field .field input{
+    width: 100%;height: 40px;border: 1px #b8b6b6 solid;
+    border-radius: 2px;padding-left: 25px;
+    border: 1px solid #0D6EFD;margin-top: 10px;
+    
+    outline: none;
+}
+form .main-field .field i{
+    position: absolute;left: 3px;top: 30%;
+    color: #b8b6b6;
+}
+form .main-field .field ::placeholder{
+position: absolute;left: 25px;
+
+}
+ .message-area textarea :hover {
+    border: 1px #0D6EFD solid;
+} 
+form .main-field .field input:focus ~i,
+.message-area textarea:focus ~i{
+    color: #0D6EFD;
+}
+.message-area{
+    width: 100%;height: 15%;
+    position: relative;
+  
+  
+}
+.message-area textarea{
+    max-width: 90%;min-height: 40px;margin-top: 10px;margin-left: 5px;
+  padding-left: 25px;font-size: large; border: 1px solid #0D6EFD;
+max-height: 200px;min-width: 50%;
+
+}
+.message-area i{
+    position: absolute;
+    left: 10px;top: 15px;
+    color: #b8b6b6;
+}
+.submit-area{
+    width: 100%;height: 50px;display: flex;justify-content: center;
+    align-items: center;padding: 10px;position: relative;
+}
+.submit-area .btn{
+    width: 100px;height: 40px;border: 1px solid #0D6EFD ;
+    border-radius: 5px;color: #0D6EFD;transition: .2s;position: absolute;
+    left: 10px;
+}
+.submit-area .btn:hover{
+    background-color: #0D6EFD;color: rgb(242, 240, 235);
+    cursor: pointer;margin-right: 10px;letter-spacing: 1px;
+}
+.submit-area span{
+    width: 70%;height: 30px;margin-left: 10px;color: #0D6EFD;
+    font-weight: 400;display: none;position: absolute;right: 10px;
+    max-width: 40%;
+
+}
